@@ -1,0 +1,7 @@
+""," urban_share","  birth_rate","illiterate_share","modern_indus_optput_pc","middle_class_share","upper_class_share","chr_minority_share","commerce_share_male","high_hc_occupation_male"
+"","Min.   :0.03156  ","Min.   : 7.258  ","Min.   :0.0000  ","Min.   : 0.0000  ","Min.   :0.002789  ","Min.   :0.00000  ","Min.   :0.0003268  ","Min.   :0.000000  ","Min.   :0.0000000  "
+"","1st Qu.:0.08114  ","1st Qu.:34.284  ","1st Qu.:0.7418  ","1st Qu.: 0.1546  ","1st Qu.:0.042932  ","1st Qu.:0.01298  ","1st Qu.:0.0119884  ","1st Qu.:0.001974  ","1st Qu.:0.0007771  "
+"","Median :0.10990  ","Median :44.107  ","Median :0.8134  ","Median : 0.4357  ","Median :0.074061  ","Median :0.01886  ","Median :0.0326237  ","Median :0.002666  ","Median :0.0010362  "
+"","Mean   :0.13610  ","Mean   :42.585  ","Mean   :0.7697  ","Mean   : 3.4505  ","Mean   :0.100529  ","Mean   :0.02119  ","Mean   :0.1017586  ","Mean   :0.003074  ","Mean   :0.0011864  "
+"","3rd Qu.:0.14351  ","3rd Qu.:53.688  ","3rd Qu.:0.8535  ","3rd Qu.: 1.4856  ","3rd Qu.:0.155399  ","3rd Qu.:0.02289  ","3rd Qu.:0.1136312  ","3rd Qu.:0.003656  ","3rd Qu.:0.0013324  "
+"","Max.   :0.67317  ","Max.   :62.752  ","Max.   :0.9743  ","Max.   :61.1690  ","Max.   :0.332625  ","Max.   :0.09240  ","Max.   :0.9147355  ","Max.   :0.010176  ","Max.   :0.0053380  "
