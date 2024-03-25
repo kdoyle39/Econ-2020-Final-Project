@@ -2,7 +2,6 @@
 library(modelsummary)
 library(xtable)
 library(estimatr)
-library(modelsummary)
 
 # Summary stats
 variables <- c("urban_share", "birth_rate", "illiterate_share", "modern_indus_optput_pc",
@@ -52,7 +51,6 @@ high_educ_OLS_controls <- lm_robust(high_educ_share ~ modern_indus_optput_pc + m
 
 modelsummary(list("Illiteracy by Regions" = illiteracy_OLS_simple, "Illiteracy with Controls" = illiteracy_OLS_controls, "High Education by Regions" = high_educ_OLS_simple, "High Education with Controls" = high_educ_OLS_controls), gof_map = c("nobs", "r.squared", "adj.r.squared"), stars = TRUE, output = "Output/region_differences.tex" )
 modelsummary(list("Illiteracy by Regions" = illiteracy_OLS_simple, "Illiteracy with Controls" = illiteracy_OLS_controls, "High Education by Regions" = high_educ_OLS_simple, "High Education with Controls" = high_educ_OLS_controls), gof_map = c("nobs", "r.squared", "adj.r.squared"), stars = TRUE, output = "Output/region_differences.md" )
-
 
 ## Gender differences
 ### Literacy
