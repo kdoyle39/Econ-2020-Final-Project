@@ -1,38 +1,47 @@
 \begin{table}
 \centering
-\begin{tabular}[t]{lcccc}
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+hline{26}={1,2,3,4,5}{solid, 0.05em, black},
+}                     %% tabularray inner close
 \toprule
-  & Illiteracy by Regions & Illiteracy with Controls & High Education by Regions & High Education with Controls\\
-\midrule
-(Intercept) & \num{0.880}*** & \num{0.787}*** & \num{0.000}*** & \num{-0.001}*\\
- & (\num{0.027}) & (\num{0.068}) & (\num{0.000}) & (\num{0.000})\\
-Region\_dCentral Region & \num{-0.094}** & \num{0.005} & \num{0.000} & \num{0.000}\\
- & (\num{0.030}) & (\num{0.050}) & (\num{0.000}) & (\num{0.000})\\
-Region\_dEastern Region & \num{-0.046} & \num{0.066} & \num{0.000} & \num{0.000}\\
- & (\num{0.033}) & (\num{0.056}) & (\num{0.000}) & (\num{0.000})\\
-Region\_dSouthern Region & \num{-0.093}* & \num{-0.034} & \num{0.000}+ & \num{0.000}+\\
- & (\num{0.043}) & (\num{0.057}) & (\num{0.000}) & (\num{0.000})\\
-Region\_dWestern Region & \num{-0.250}*** & \num{-0.123} & \num{0.001}* & \num{0.001}*\\
- & (\num{0.054}) & (\num{0.076}) & (\num{0.000}) & (\num{0.000})\\
-modern\_indus\_optput\_pc &  & \num{-0.001} &  & \num{0.000}\\
- &  & (\num{0.002}) &  & (\num{0.000})\\
-mining\_output\_pc &  & \num{0.001} &  & \num{0.000}\\
- &  & (\num{0.003}) &  & (\num{0.000})\\
-upper\_class\_share &  & \num{0.993} &  & \num{0.016}+\\
- &  & (\num{0.970}) &  & (\num{0.009})\\
-middle\_class\_share &  & \num{0.890}* &  & \num{-0.005}*\\
- &  & (\num{0.376}) &  & (\num{0.002})\\
-chr\_minority\_share &  & \num{-0.370}+ &  & \num{-0.002}+\\
- &  & (\num{0.213}) &  & (\num{0.001})\\
-other\_minority\_share &  & \num{0.227}*** &  & \num{0.000}\\
- &  & (\num{0.064}) &  & (\num{0.000})\\
-urban\_share &  & \num{-0.783}*** &  & \num{0.010}***\\
- &  & (\num{0.177}) &  & (\num{0.002})\\
-\midrule
-Num.Obs. & \num{90} & \num{90} & \num{88} & \num{88}\\
-R2 & \num{0.295} & \num{0.598} & \num{0.074} & \num{0.840}\\
-R2 Adj. & \num{0.262} & \num{0.542} & \num{0.029} & \num{0.817}\\
+& Illiteracy by Regions & Illiteracy with Controls & High Education by Regions & High Education with Controls \\ \midrule %% TinyTableHeader
+(Intercept)                  & \num{0.880}***  & \num{0.787}***  & \num{0.000}*** & \num{-0.001}*  \\
+& (\num{0.027})   & (\num{0.068})   & (\num{0.000})  & (\num{0.000})  \\
+Region\_dCentral Region     & \num{-0.094}**  & \num{0.005}     & \num{0.000}    & \num{0.000}    \\
+& (\num{0.030})   & (\num{0.050})   & (\num{0.000})  & (\num{0.000})  \\
+Region\_dEastern Region     & \num{-0.046}    & \num{0.066}     & \num{0.000}    & \num{0.000}    \\
+& (\num{0.033})   & (\num{0.056})   & (\num{0.000})  & (\num{0.000})  \\
+Region\_dSouthern Region    & \num{-0.093}*   & \num{-0.034}    & \num{0.000}+   & \num{0.000}+   \\
+& (\num{0.043})   & (\num{0.057})   & (\num{0.000})  & (\num{0.000})  \\
+Region\_dWestern Region     & \num{-0.250}*** & \num{-0.123}    & \num{0.001}*   & \num{0.001}*   \\
+& (\num{0.054})   & (\num{0.076})   & (\num{0.000})  & (\num{0.000})  \\
+modern\_indus\_optput\_pc &                  & \num{-0.001}    &                 & \num{0.000}    \\
+&                  & (\num{0.002})   &                 & (\num{0.000})  \\
+mining\_output\_pc         &                  & \num{0.001}     &                 & \num{0.000}    \\
+&                  & (\num{0.003})   &                 & (\num{0.000})  \\
+upper\_class\_share        &                  & \num{0.993}     &                 & \num{0.016}+   \\
+&                  & (\num{0.970})   &                 & (\num{0.009})  \\
+middle\_class\_share       &                  & \num{0.890}*    &                 & \num{-0.005}*  \\
+&                  & (\num{0.376})   &                 & (\num{0.002})  \\
+chr\_minority\_share       &                  & \num{-0.370}+   &                 & \num{-0.002}+  \\
+&                  & (\num{0.213})   &                 & (\num{0.001})  \\
+other\_minority\_share     &                  & \num{0.227}***  &                 & \num{0.000}    \\
+&                  & (\num{0.064})   &                 & (\num{0.000})  \\
+urban\_share                &                  & \num{-0.783}*** &                 & \num{0.010}*** \\
+&                  & (\num{0.177})   &                 & (\num{0.002})  \\
+Num.Obs.                     & \num{90}        & \num{90}        & \num{88}       & \num{88}       \\
+R2                           & \num{0.295}     & \num{0.598}     & \num{0.074}    & \num{0.840}    \\
+R2 Adj.                      & \num{0.262}     & \num{0.542}     & \num{0.029}    & \num{0.817}    \\
 \bottomrule
-\multicolumn{5}{l}{\rule{0pt}{1em}+ p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001}\\
-\end{tabular}
+\end{talltblr}
 \end{table}

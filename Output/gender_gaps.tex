@@ -1,38 +1,47 @@
 \begin{table}
 \centering
-\begin{tabular}[t]{lcccc}
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+hline{26}={1,2,3,4,5}{solid, 0.05em, black},
+}                     %% tabularray inner close
 \toprule
-  & Illiteracy Male & Illiteracy Female & HC Occupations Male & HC Occupations Female\\
-\midrule
-(Intercept) & \num{0.352}*** & \num{0.435}*** & \num{0.000} & \num{0.000}\\
- & (\num{0.038}) & (\num{0.037}) & (\num{0.000}) & (\num{0.000})\\
-modern\_indus\_optput\_pc & \num{-0.001} & \num{0.000} & \num{0.000} & \num{0.000}\\
- & (\num{0.001}) & (\num{0.001}) & (\num{0.000}) & (\num{0.000})\\
-mining\_output\_pc & \num{0.002} & \num{0.000} & \num{0.000} & \num{0.000}\\
- & (\num{0.002}) & (\num{0.001}) & (\num{0.000}) & (\num{0.000})\\
-upper\_class\_share & \num{0.528} & \num{0.465} & \num{0.010}* & \num{0.008}\\
- & (\num{0.503}) & (\num{0.590}) & (\num{0.004}) & (\num{0.005})\\
-middle\_class\_share & \num{0.303} & \num{0.587}** & \num{0.001} & \num{-0.003}*\\
- & (\num{0.202}) & (\num{0.217}) & (\num{0.001}) & (\num{0.001})\\
-chr\_minority\_share & \num{-0.116} & \num{-0.254}* & \num{-0.001}** & \num{-0.001}*\\
- & (\num{0.119}) & (\num{0.099}) & (\num{0.000}) & (\num{0.000})\\
-other\_minority\_share & \num{0.169}*** & \num{0.058}+ & \num{0.000} & \num{0.000}\\
- & (\num{0.041}) & (\num{0.033}) & (\num{0.000}) & (\num{0.000})\\
-urban\_share & \num{-0.267}* & \num{-0.516}*** & \num{0.006}*** & \num{0.005}***\\
- & (\num{0.104}) & (\num{0.131}) & (\num{0.001}) & (\num{0.001})\\
-Region\_dCentral Region & \num{-0.043} & \num{0.048}+ & \num{0.000} & \num{0.001}**\\
- & (\num{0.030}) & (\num{0.025}) & (\num{0.000}) & (\num{0.000})\\
-Region\_dEastern Region & \num{0.054} & \num{0.012} & \num{0.000} & \num{0.000}\\
- & (\num{0.040}) & (\num{0.028}) & (\num{0.000}) & (\num{0.000})\\
-Region\_dSouthern Region & \num{-0.023} & \num{-0.011} & \num{0.000} & \num{0.000}+\\
- & (\num{0.034}) & (\num{0.028}) & (\num{0.000}) & (\num{0.000})\\
-Region\_dWestern Region & \num{-0.065}+ & \num{-0.058} & \num{0.000} & \num{0.001}+\\
- & (\num{0.039}) & (\num{0.045}) & (\num{0.000}) & (\num{0.000})\\
-\midrule
-Num.Obs. & \num{90} & \num{90} & \num{90} & \num{90}\\
-R2 & \num{0.607} & \num{0.632} & \num{0.814} & \num{0.743}\\
-R2 Adj. & \num{0.552} & \num{0.580} & \num{0.787} & \num{0.707}\\
+& Illiteracy Male & Illiteracy Female & HC Occupations Male & HC Occupations Female \\ \midrule %% TinyTableHeader
+(Intercept)                  & \num{0.352}*** & \num{0.435}***  & \num{0.000}    & \num{0.000}    \\
+& (\num{0.038})  & (\num{0.037})   & (\num{0.000})  & (\num{0.000})  \\
+modern\_indus\_optput\_pc & \num{-0.001}   & \num{0.000}     & \num{0.000}    & \num{0.000}    \\
+& (\num{0.001})  & (\num{0.001})   & (\num{0.000})  & (\num{0.000})  \\
+mining\_output\_pc         & \num{0.002}    & \num{0.000}     & \num{0.000}    & \num{0.000}    \\
+& (\num{0.002})  & (\num{0.001})   & (\num{0.000})  & (\num{0.000})  \\
+upper\_class\_share        & \num{0.528}    & \num{0.465}     & \num{0.010}*   & \num{0.008}    \\
+& (\num{0.503})  & (\num{0.590})   & (\num{0.004})  & (\num{0.005})  \\
+middle\_class\_share       & \num{0.303}    & \num{0.587}**   & \num{0.001}    & \num{-0.003}*  \\
+& (\num{0.202})  & (\num{0.217})   & (\num{0.001})  & (\num{0.001})  \\
+chr\_minority\_share       & \num{-0.116}   & \num{-0.254}*   & \num{-0.001}** & \num{-0.001}*  \\
+& (\num{0.119})  & (\num{0.099})   & (\num{0.000})  & (\num{0.000})  \\
+other\_minority\_share     & \num{0.169}*** & \num{0.058}+    & \num{0.000}    & \num{0.000}    \\
+& (\num{0.041})  & (\num{0.033})   & (\num{0.000})  & (\num{0.000})  \\
+urban\_share                & \num{-0.267}*  & \num{-0.516}*** & \num{0.006}*** & \num{0.005}*** \\
+& (\num{0.104})  & (\num{0.131})   & (\num{0.001})  & (\num{0.001})  \\
+Region\_dCentral Region     & \num{-0.043}   & \num{0.048}+    & \num{0.000}    & \num{0.001}**  \\
+& (\num{0.030})  & (\num{0.025})   & (\num{0.000})  & (\num{0.000})  \\
+Region\_dEastern Region     & \num{0.054}    & \num{0.012}     & \num{0.000}    & \num{0.000}    \\
+& (\num{0.040})  & (\num{0.028})   & (\num{0.000})  & (\num{0.000})  \\
+Region\_dSouthern Region    & \num{-0.023}   & \num{-0.011}    & \num{0.000}    & \num{0.000}+   \\
+& (\num{0.034})  & (\num{0.028})   & (\num{0.000})  & (\num{0.000})  \\
+Region\_dWestern Region     & \num{-0.065}+  & \num{-0.058}    & \num{0.000}    & \num{0.001}+   \\
+& (\num{0.039})  & (\num{0.045})   & (\num{0.000})  & (\num{0.000})  \\
+Num.Obs.                     & \num{90}       & \num{90}        & \num{90}       & \num{90}       \\
+R2                           & \num{0.607}    & \num{0.632}     & \num{0.814}    & \num{0.743}    \\
+R2 Adj.                      & \num{0.552}    & \num{0.580}     & \num{0.787}    & \num{0.707}    \\
 \bottomrule
-\multicolumn{5}{l}{\rule{0pt}{1em}+ p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001}\\
-\end{tabular}
+\end{talltblr}
 \end{table}
